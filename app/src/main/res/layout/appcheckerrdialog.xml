@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/exit_dialog_bg"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <RelativeLayout
+        android:id="@+id/upper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/delettexd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/blocked_by_developer"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_clear_24"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upper"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/ic_appicon" />
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:src="@drawable/danger" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/poppinlight"
+            android:text="@string/para_one"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/mytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/deletetextt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppinlight"
+            android:text="@string/para_two"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mytext"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:weightSum="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/accept"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/dialog_btn_bg"
+            android:backgroundTint="@color/newpurple"
+            android:fontFamily="@font/poppinlight"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/install"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_13ssp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

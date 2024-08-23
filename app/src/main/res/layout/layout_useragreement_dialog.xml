@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/exit_dialog_bg">
+
+    <ImageView
+        android:id="@+id/iv_camera"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/ic_user_agreement"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/iv_camera"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/user_agreement_label"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:visibility="gone"
+        android:background="@color/greyishPurple" />
+
+    <TextView
+        android:id="@+id/tv_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_below="@+id/rl_top"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/agreement_bod"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11ssp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_body"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv_body"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/tv_termsStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:padding="@dimen/_3sdp"
+            android:text="@string/agreement_statement"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11ssp" />
+
+        <TextView
+            android:id="@+id/tv_termsOfService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_toEndOf="@+id/tv_termsStart"
+            android:gravity="center"
+            android:padding="@dimen/_3sdp"
+            android:text="@string/terms_of_service"
+            android:textColor="@color/newyellow"
+            android:textSize="@dimen/_11ssp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/rl_body"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:visibility="gone"
+        android:background="@color/greyishPurple" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_body"
+        android:padding="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_accept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:background="@drawable/dialog_btn_bg"
+            android:fontFamily="@font/gilroy_light"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:text="@string/accept_agreement_label"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

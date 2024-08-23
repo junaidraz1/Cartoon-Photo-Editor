@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_350sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_splash_bg_1" />
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_splash_bg_2" />
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_splash_bg_3" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/iv_splash"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_overlay">
+
+            <LinearLayout
+                android:id="@+id/ll_blank"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp"
+                android:orientation="horizontal" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/rl_ads"
+                android:layout_below="@+id/ll_blank"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:id="@+id/ll_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:gravity="center"
+                        android:text="@string/app_name_split"
+                        android:textColor="@color/lightpink"
+                        android:textSize="@dimen/_22ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="@string/app_name_split2"
+                        android:textColor="@color/newyellow"
+                        android:textSize="@dimen/_22ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text="@string/splash_label"
+                        android:textColor="@color/lightgreyish"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text="@string/splash_label2"
+                        android:textColor="@color/darkgreyish"
+                        android:textSize="@dimen/_9ssp" />
+
+                    <TextView
+                        android:id="@+id/tv_privacyPolicy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text="@string/privacy_label"
+                        android:textColor="@color/newpurple"
+                        android:textSize="@dimen/_9ssp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_continue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:background="@drawable/custom_btn_bg"
+                            android:backgroundTint="@color/newpurple"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="center"
+                            android:text="@string/continue_label"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp"
+                            android:visibility="gone" />
+
+                        <ProgressBar
+                            android:id="@+id/pb_progressBar"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:indeterminateTint="@color/newpurple"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/rl_ads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/ad_border"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_loadingAd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/gilroy_light"
+                    android:padding="@dimen/_20sdp"
+                    android:text="@string/loading_ad_label"
+                    android:textColor="@color/darkGreyishPurple"
+                    android:textSize="@dimen/_9ssp" />
+
+                <FrameLayout
+                    android:id="@+id/fl_adContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

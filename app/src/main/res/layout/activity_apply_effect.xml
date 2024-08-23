@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newBgColor"
+    tools:context=".Activities.ApplyEffectActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_nav_back"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/rl_save"
+            android:layout_toEndOf="@+id/rl_back"
+            android:fontFamily="@font/gilroy_bold"
+            android:gravity="start"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_tick"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_golden_tick" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_adContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top_bar"
+        android:background="@drawable/ad_border"
+        android:textColor="@color/darkGreyishPurple">
+
+        <TextView
+            android:id="@+id/tv_loadingAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy_light"
+            android:gravity="center"
+            android:padding="@dimen/_20sdp"
+
+            android:text="@string/loading_ad_label"
+            android:textColor="@color/darkGreyishPurple"
+            android:textSize="@dimen/_9ssp" />
+
+        <FrameLayout
+            android:id="@+id/fl_adContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_adContainer"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/iv_noImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:src="@drawable/ic_noimage_placeholder"/>
+
+        <ImageView
+            android:id="@+id/iv_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:src="@drawable/ic_original"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

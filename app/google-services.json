@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "341567506635",
+    "project_id": "cartoon-photo-editor-cd47e",
+    "storage_bucket": "cartoon-photo-editor-cd47e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:341567506635:android:6e9c8aece6e1f7d218334e",
+        "android_client_info": {
+          "package_name": "com.cartoonpic.aiphotoeditor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "341567506635-ufvikq494neffse759dvgedbv1cfap7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVU4gdixfzG3_HcNh2b9RzlPHg_Xo9I28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "341567506635-ufvikq494neffse759dvgedbv1cfap7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

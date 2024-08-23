@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_bgTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_5sdp"
+        android:background="@drawable/top_rounded_new"
+        android:backgroundTint="@color/lightnewYellow"
+        android:orientation="horizontal" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ll_imageDelConfirmation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/greyishBlack"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardMaxElevation="@dimen/_7sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_messageBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/greyishBlack"
+                android:padding="@dimen/_5sdp">
+
+                <com.dinuscxj.progressbar.CircleProgressBar
+                    android:id="@+id/line_progress"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_below="@+id/tv_message"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:visibility="gone"
+                    app:progress_background_color="@color/greyishPurple"
+                    app:progress_end_color="@color/newpurple"
+                    app:progress_start_color="@color/newpurple"
+                    app:progress_stroke_cap="round"
+                    app:progress_stroke_width="@dimen/_3sdp"
+                    app:progress_style="solid_line"
+                    app:progress_text_color="@color/white"
+                    app:progress_text_size="@dimen/_12ssp" />
+
+                <ProgressBar
+                    android:id="@+id/pb_progressBar"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:indeterminateDrawable="@drawable/progress_bar_bg"
+                    android:indeterminateOnly="true"
+                    android:progressDrawable="@drawable/progress_bar_bg"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pb_progressBar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11ssp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_adLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:textColor="@color/darkGreyishPurple">
+
+                <FrameLayout
+                    android:id="@+id/native_ad_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <include layout="@layout/native_banner_ad_layout" />
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_adContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/ad_border"
+                    android:textColor="@color/darkGreyishPurple"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_loadingAd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:padding="@dimen/_20sdp"
+                        android:text="@string/loading_ad_label"
+                        android:textColor="@color/darkGreyishPurple"
+                        android:textSize="@dimen/_9ssp" />
+
+                    <FrameLayout
+                        android:id="@+id/fl_adContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/greyishBlack"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:id="@+id/ll_actionButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/ll_getFilters"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_border_bg"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_8sdp">
+
+                        <TextView
+                            android:id="@+id/tv_btnLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/cancel_label"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_save"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dialog_btn_bg"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_8sdp">
+
+                        <TextView
+                            android:id="@+id/tv_btnRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/ok_label"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_8ssp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/pb_progressBar2"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:indeterminateDrawable="@drawable/progress_bar_bg"
+                    android:indeterminateOnly="true"
+                    android:progressDrawable="@drawable/progress_bar_bg"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_singleBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:background="@drawable/dialog_btn_bg"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_btnSingle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newBgColor"
+    android:layoutDirection="locale"
+    tools:context=".Activities.OnBoardingActivity">
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="@string/skip_header"
+        android:textColor="@color/lightgreyish"
+        android:textSize="@dimen/_12ssp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottomAction"
+        android:layout_below="@+id/tv_skip"
+        android:layout_marginBottom="@dimen/_5sdp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottomAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp">
+
+        <LinearLayout
+            android:id="@+id/ll_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <RelativeLayout
+            android:id="@+id/rl_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_rounded"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_next" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

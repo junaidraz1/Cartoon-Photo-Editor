@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_renameDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/greyishBlack"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardMaxElevation="@dimen/_7sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/iv_renameLogo"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_rename_logo" />
+
+                <ImageView
+                    android:id="@+id/iv_close"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_close" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_renameLogo"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_messageBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/greyishBlack"
+                android:padding="@dimen/_10sdp"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/et_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:backgroundTint="@color/onBoardColor"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="start"
+                    android:hint="@string/enter_name_label"
+                    android:maxLines="1"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/lightGray"
+                    android:textSize="@dimen/_12ssp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_errMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/greyishBlack"
+                android:padding="@dimen/_10sdp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_errMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:text="@string/duplicate_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_actionButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/ll_getFilters"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_border_bg"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/tv_btnLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/cancel_label"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_save"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dialog_btn_bg"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/tv_btnRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/save_label"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_errActionButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/ll_retry"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_border_bg"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/tv_btnRetry"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/retry_label"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_overwrite"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dialog_btn_bg"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/tv_btnOverwrite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/overwrite_label"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_singleBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:background="@drawable/dialog_btn_bg"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_btnSingle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/retry_label"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap xmlns:android="http://schemas.android.com/apk/res/android">
+    <entry>
+        <key>Admob_App_Id</key>
+        <value>ca-app-pub-3940256099942544~3347511713</value>
+    </entry>
+
+    <entry>
+        <key>App_Open_Ad_Id</key>
+        <value>ca-app-pub-3940256099942544/3419835294</value>
+    </entry>
+
+    <entry>
+        <key>AdMob_Main_Adaptive_Banner_Ad_Id</key>
+        <value>ca-app-pub-3940256099942544/6300978111</value>
+    </entry>
+
+    <entry>
+        <key>AdMob_Main_Interstitial_Ad_Id</key>
+        <value>ca-app-pub-3940256099942544/1033173712</value>
+    </entry>
+
+    <entry>
+        <key>AdMob_Main_Native_Advance_Ad_Id</key>
+        <value>ca-app-pub-3940256099942544/2247696110</value>
+    </entry>
+
+    <entry>
+        <key>AdMob_Main_Rewarded_Interstitial_Ad_Id</key>
+        <value>ca-app-pub-3940256099942544/5354046379</value>
+    </entry>
+
+    <entry>
+        <key>AdMob_Splash_Adaptive_Banner_Ad_Id</key>
+        <value>ca-app-pub-3940256099942544/6300978111</value>
+    </entry>
+
+    <entry>
+        <key>AdMob_Splash_Interstitial_Ad_Id</key>
+        <value>ca-app-pub-3940256099942544/1033173712</value>
+    </entry>
+
+</defaultsMap>

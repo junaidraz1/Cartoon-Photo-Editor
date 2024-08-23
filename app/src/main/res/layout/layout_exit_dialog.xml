@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/exit_dialog_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/ic_close" />
+
+        <ImageView
+            android:id="@+id/iv_renameLogo"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_below="@+id/iv_close"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_exit_dialog" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_renameLogo"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="@string/app_exit_header"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="@string/app_exit_message"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_adLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title"
+        android:padding="@dimen/_10sdp">
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_adLayout"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <LinearLayout
+            android:id="@+id/ll_actionButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            android:visibility="visible"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/ll_getFilters"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/white_border_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/tv_btnLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/cancel_label"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_okay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="0.5"
+                android:background="@drawable/dialog_btn_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/tv_btnRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/confirm_exit_dialog"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_singleBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/grey_rounded_corner_bg"
+            android:backgroundTint="@color/turquoise"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:padding="@dimen/_8sdp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_btnSingle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_bold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

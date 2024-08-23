@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/exit_dialog_bg">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_rawRes="@raw/animation_choose_picture" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/animation_view"-->
+<!--        android:layout_width="@dimen/_100sdp"-->
+<!--        android:layout_height="@dimen/_100sdp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:src="@drawable/ic_delete_icon"/>-->
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/animation_view"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/choose_picture"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_actionBtns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_header"
+        android:backgroundTint="@color/darkBlue"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp">
+
+        <LinearLayout
+            android:id="@+id/rl_cameraNdGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_cameraLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:background="@drawable/rounded_circle_bg"
+                        android:backgroundTint="@color/newpurple">
+
+                        <ImageView
+                            android:id="@+id/iv_camera"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_camera_icon" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="@string/camera_label"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11ssp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_galleryLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_45sdp"
+                        android:background="@drawable/rounded_circle_bg"
+                        android:backgroundTint="@color/newpurple">
+
+                        <ImageView
+                            android:id="@+id/iv_gallery"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_gallery_icon" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:text="@string/gallery_label"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11ssp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tv_header"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_cameraLayout"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="@dimen/_10sdp"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="@dimen/_45sdp"-->
+<!--                android:layout_height="@dimen/_45sdp"-->
+<!--                android:background="@drawable/rounded_circle_bg"-->
+<!--                android:backgroundTint="@color/newpurple">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/iv_camera"-->
+<!--                    android:layout_width="@dimen/_25sdp"-->
+<!--                    android:layout_height="@dimen/_25sdp"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:src="@drawable/ic_camera_icon" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                android:gravity="center"-->
+<!--                android:text="@string/camera_label"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="@dimen/_11ssp" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_galleryLayout"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_toEndOf="@+id/ll_cameraLayout"-->
+<!--            android:layout_margin="@dimen/_10sdp"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="@dimen/_45sdp"-->
+<!--                android:layout_height="@dimen/_45sdp"-->
+<!--                android:background="@drawable/rounded_circle_bg"-->
+<!--                android:backgroundTint="@color/newpurple">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/iv_gallery"-->
+<!--                    android:layout_width="@dimen/_25sdp"-->
+<!--                    android:layout_height="@dimen/_25sdp"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:src="@drawable/ic_gallery_icon" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                android:gravity="center"-->
+<!--                android:text="@string/gallery_label"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="@dimen/_11ssp" />-->
+
+<!--        </LinearLayout>-->
+
+
+<!--    </RelativeLayout>-->
+
+
+</RelativeLayout>

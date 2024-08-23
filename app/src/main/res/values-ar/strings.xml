@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">محرر صور الكرتون</string>
+    <string name="app_name_split">كرتون</string>
+    <string name="app_name_split2">محرر الصور</string>
+    <string name="home_header">تأثير الفن بالذكاء الاصطناعي</string>
+    <string name="camera_label">الكاميرا</string>
+    <string name="gallery_label">المعرض</string>
+    <string name="gallery_access_ask">منح إذن للوصول إلى الصور من المعرض هنا!</string>
+    <string name="free_trial_label">تجربة مجانية</string>
+    <string name="allow_access_label">السماح بالوصول</string>
+    <string name="open_settings">السماح من الإعدادات</string>
+    <string name="save_label">حفظ</string>
+    <string name="visit_label">زيارة</string>
+    <string name="view_label">رسم كرتوني جميل</string>
+    <string name="share_label">مشاركة</string>
+    <string name="filter_label">تطبيق تصفية</string>
+    <string name="after_edit_label">كرتون من خلال التصفية</string>
+    <string name="cancel_label">إلغاء</string>
+    <string name="crop_image_label">تقطيع الصورة</string>
+    <string name="buy_label">الوصول إلى جميع الميزات</string>
+    <string name="trial_label">تجربة مجانية لمدة 3 أيام</string>
+    <string name="continue_label">متابعة</string>
+    <string name="splash_label">قم بجعل التصور الأكثر جاذبية في صورك</string>
+    <string name="splash_label2">من خلال النقر على "متابعة"، تؤكد أنك موافق على اتفاقنا</string>
+    <string name="stylish_cartoon_label">كرتون أنيق</string>
+    <string name="maker_label">صانع</string>
+    <string name="user_agreement_label">اتفاق المستخدم</string>
+    <string name="accept_agreement_label">قبول ومتابعة</string>
+    <string name="search_lang_label">البحث عن لغة البلد</string>
+    <string name="saved_file_label">تم الحفظ</string>
+    <string name="access_to_photos_label">الوصول إلى الصور</string>
+    <string name="edit_label">تحرير</string>
+    <string name="convert_label">تحويل</string>
+    <string name="ok_label">موافق</string>
+
+    <string name="upload_image_message">الرجاء الانتظار أثناء رفع الصورة الخاصة بك \n لتطبيق التصفية.</string>
+    <string name="upload_image_header">رفع الصورة</string>
+    <string name="finalising_msg">ذكاؤنا الاصطناعي يعمل على معالجة صورتك لتطبيق التصفية. قد يستغرق هذا العملية وقتًا قليلاً</string>
+    <string name="finalising_header">الانتهاء</string>
+    <string name="cartoon_maker_header">محرر صور الكرتون بالذكاء الاصطناعي</string>
+    <string name="con_error_msg">حدث خطأ! يرجى المحاولة مرة أخرى بعد بضع دقائق</string>
+    <string name="limit_exceeded_msg">تم تجاوز الحد الأقصى لمعالجة الصور. يرجى المحاولة مرة أخرى في وقت لاحق</string>
+    <string name="loading_header">جاري تحميل التصفيات</string>
+    <string name="loading_msg">نحن نقوم بتجهيز مجموعة من التصفيات لتحسين صورتك. قد يستغرق ذلك بضع لحظات.</string>
+    <string name="exit_warning_msg">هل أنت متأكد أنك تريد الخروج دون حفظ؟ لن يتم حفظ التغييرات الخاصة بك، وسيتم فقد أي تقدم غير محفوظ.</string>
+    <string name="filters_label">التصفيات</string>
+    <string name="no_converted_msg">عفوًا! يبدو أنك لم تقم بتحويل أو حفظ أي صور بعد.</string>
+    <string name="saved_files_header">الملفات المحفوظة</string>
+    <string name="yes_label">نعم</string>
+    <string name="no_label">لا</string>
+    <string name="del_img_header">حذف الصورة</string>
+    <string name="del_img_msg">هل تريد حذف هذه الصورة المحولة؟</string>
+    <string name="del_img_success_msg">تم حذف الصورة بنجاح</string>
+    <string name="remove_ads_label">إزالة الإعلانات</string>
+    <string name="get_features_label">الحصول على جميع الميزات الرئيسية</string>
+    <string name="get_filters_label">الحصول على تصفيات غير محدودة</string>
+    <string name="vip_channel_label">القناة الحصرية للأعضاء VIP</string>
+    <string name="get_unlimited_access_label">الحصول على وصول غير محدود</string>
+    <string name="get_access_body">الحصول على وصول إلى جميع ميزاتنا</string>
+    <string name="monthly_label">شهرياً</string>
+    <string name="price_label">$4.99</string>
+    <string name="cancel_anytime_label">الغاء في أي وقت</string>
+    <string name="com_soon">قريباً</string>
+    <string name="cam_denied">رفض الوصول إلى الكاميرا</string>
+    <string name="name_update">تم تحديث الاسم</string>
+    <string name="saved_gall">حفظ في المعرض</string>
+
+    <string name="exit_label">خروج</string>
+    <string name="original_header">الأصلي</string>
+    <string name="discount_label">حفظ 50%</string>
+    <string name="exit_dialog_msg"><![CDATA[إذا كنت ترغب في إنشاء صورة ملف شخصي باستخدام محرر صور الكرتون، يرجى استكشاف وزيارة التصفيات الذكية الجديدة الرائجة]]></string>
+    <string name="delete_label">حذف</string>
+    <string name="rename_label">إعادة تسمية</string>
+    <string name="rename_file_label">إعادة تسمية الملف</string>
+    <string name="eng_label">الإنجليزية</string>
+    <string name="afrikaans_label">الأفريكانية</string>
+    <string name="arabic_label">العربية</string>
+    <string name="chinese_label">الصينية</string>
+    <string name="czech_label">التشيكية</string>
+    <string name="dutch_label">الهولندية</string>
+    <string name="french_label">الفرنسية</string>
+    <string name="german_label">الألمانية</string>
+    <string name="greek_label">اليونانية</string>
+    <string name="hebrew_label">العبرية</string>
+    <string name="hindi_label">الهندية</string>
+    <string name="indo_label">الإندونيسية</string>
+    <string name="italian_label">الإيطالية</string>
+    <string name="jap_label">اليابانية</string>
+    <string name="korean_label">الكورية</string>
+    <string name="malay_label">الماليزية</string>
+    <string name="nor_label">النرويجية</string>
+    <string name="per_label">الفارسية</string>
+    <string name="port_label">البرتغالية</string>
+    <string name="russ_label">الروسية</string>
+    <string name="spanish_label">الإسبانية</string>
+    <string name="thai_label">التايلاندية</string>
+    <string name="turk_label">التركية</string>
+    <string name="viet_label">الفيتنامية</string>
+
+    <string name="select_language_label">اختر اللغة</string>
+    <string name="select_label">اختر</string>
+    <string name="open_drawer">افتح الدرج</string>
+    <string name="close_drawer">أغلق الدرج</string>
+    <string name="general_label">عام</string>
+    <string name="language_label">اللغة</string>
+    <string name="others_label">أخرى</string>
+    <string name="rate_us_label">قيمنا</string>
+    <string name="privacy_policy_label">سياسة الخصوصية</string>
+    <string name="feedback_label">رأيك</string>
+    <string name="more_apps_label">التطبيقات الأخرى</string>
+    <string name="rename_err_msg">لا يمكن أن يكون الاسم فارغًا!</string>
+    <string name="privacy_underlined_label"><u>سياسة الخصوصية</u></string>
+    <string name="share_title">محرر صور الكرتون</string>
+    <string name="share_body">اسمحوا لي بأن أوصيكم بأفضل تطبيق محرر صور الكرتون بالذكاء الاصطناعي. جربوه الآن!</string>
+    <string name="share_header">مشاركة عبر</string>
+    <string name="details_label">للمزيد، قم بزيارة موقعنا</string>
+    <string name="user_agreement">محرر صور الكرتون ملتزمة بحماية خصوصيتك. مبدأ توجيهنا في جمع البيانات هو جمع أقل البيانات اللازمة لتشغيل خدمة التطبيق بمستوى عالمي. نرغب في أن تفهم ما البيانات التي نجمعها والتي لا نقوم بجمعها، وكيفية جمعها واستخدامها وتخزينها.</string>
+    <string name="user_agreement_para1">نحن لا نجمع سجلات نشاطك، بما في ذلك عدم تسجيل تاريخ تصفحك أو وجهة حركة المرور أو استعلامات DNS. نحن أيضًا لا نقوم بتخزين سجلات الاتصال، أي أنه لا توجد سجلات لعنوان IP الخاص بك أو عنوان IP الصادر منك أو اللحظة التي تم فيها الاتصال أو مدة الجلسة. قمنا بتصميم أنظمتنا لعدم وجود بيانات حساسة عنك؛ حتى عندما يتعين علينا تقديم بيانات لا نمتلكها.</string>
+    <string name="user_agreement_para2">هذه سياسة الخصوصية (سياسة الخصوصية) لا تنطبق على المعلومات التي قد تقوم بمعالجتها عند استخدام خدماتنا. في حالة الاتصال بنا بوضوح، قد نحصل على معلومات إضافية عنك مثل اسمك وعنوان بريدك الإلكتروني ورقم هاتفك ومحتوى الرسالة أو الروابط المحتملة التي قد ترسلها لنا، وأي معلومات أخرى قد تختار تقديمها. قد نحصل أيضًا على تأكيد عندما تفتح رسالة بريد إلكتروني منا. لن نقوم بجمع معلومات شخصية عن محتوى تخفيه باستخدام خدماتنا.</string>
+    <string name="loading_ad_label">جاري تحميل الإعلان</string>
+    <string name="ad_label">إعلان</string>
+
+    <string name="no_ad_msg">لا توجد إعلانات متاحة حاليًا. يرجى المحاولة مرة أخرى في وقت لاحق</string>
+    <string name="rate_us_msg">قم بتوصيتنا للآخرين عن طريق تقديم تقييم لنا على متجر Play</string>
+    <string name="app_ver_label">إصدار التطبيق: </string>
+    <string name="device_info_label">معلومات الجهاز:</string>
+    <string name="os_ver_label">إصدار النظام: </string>
+    <string name="api_level_label">مستوى API للنظام: </string>
+    <string name="dev_label">الجهاز: </string>
+    <string name="model_label">النموذج (والمنتج): </string>
+    <string name="feedback_msg">الرجاء كتابة ملاحظاتك أدناه</string>
+    <string name="agreement_bod">نحن نحترم خصوصيتك وملتزمون بحماية بياناتك الشخصية. لمعرفة المزيد عن الخطوات التي نتخذها لحماية خصوصيتك وكيفية استخدام معلوماتك، يرجى مراجعة إشعار الخصوصية الخاص بنا</string>
+    <string name="agreement_statement">أنا أقبل</string>
+    <string name="enter_name_label">أدخل الاسم</string>
+    <string name="duplicate_name">اسم الصورة مكرر. يرجى اختيار اسم مختلف</string>
+    <string name="retry_label">إعادة المحاولة</string>
+    <string name="overwrite_label">استبدال</string>
+    <string name="overwrite_body1">الصورة موجودة بالفعل بهذا الاسم، استبدالها سيقوم بإزالة الصورة الموجودة بالفعل. هل ترغب في الاستبدال؟</string>
+    <string name="overwrite_body2">اسم، عند الكتابة فإنه سيتم حذف الصورة الموجودة. هل ترغب في الكتابة فوقها؟</string>
+    <string name="watch_ad_label">شاهد الإعلان</string>
+    <string name="get_unlimited_filters">احصل على تصفيات غير محدودة</string>
+    <string name="watch_ad_body">شاهد إعلان فيديو لفتح هذا الفلتر. تذكر أنه لن يبقى مفتوحًا حتى بعد مشاهدة الإعلان. يمكنك تطبيقه مرة أخرى بعد مشاهدة إعلان آخر. استمتع بالسحر!</string>
+    <string name="rewarded_ad_label">إعلان مكافأة</string>
+    <string name="sub_msg">قم بتحسين تجربتك مع التصفيات الرئيسية. استمتع بالإبداع! 🎉</string>
+
+    <string name="app_exit_header">تأكيد الخروج؟</string>
+    <string name="app_exit_message">هل أنت متأكد أنك تريد الخروج؟</string>
+    <string name="confirm_exit_dialog">تأكيد</string>
+    <string name="on_board1_title1">قم بتحميل</string>
+    <string name="on_board1_title2">صورتك</string>
+    <string name="on_board1_description">حدد صورة من معرض الصور الخاص بك أو التقط صورة جديدة لبدء عملية التكربنة!</string>
+    <string name="on_board2_title1">اختر</string>
+    <string name="on_board2_title2">نمط الكرتون</string>
+    <string name="on_board2_description">قم بتخصيص كرتونك عن طريق اختيار من بين مجموعة متنوعة من الأنماط الفنية والتأثيرات. اجعلها مميزة بطريقتك الخاصة!</string>
+    <string name="on_board3_title1">شارك</string>
+    <string name="on_board3_title2">كرتونك</string>
+    <string name="on_board3_description">شارك كرتونك مع أصدقائك على وسائل التواصل الاجتماعي أو احفظه على جهازك. عرض أعمالك الفنية!</string>
+    <string name="convert_header">جاري تحويل الصورة</string>
+    <string name="convert_body">يرجى الانتظار لرؤية هذا العمل الفني</string>
+    <string name="trending_header">الرائج</string>
+    <string name="trending_body">قم بعمل كرتوني لنفسك باستخدام تصفيات رائجة</string>
+    <string name="dreamy_header">حالم</string>
+    <string name="styles_header">أنماط</string>
+    <string name="dreamy_body">قم بعمل كرتوني لنفسك باستخدام تصفيات حالمة</string>
+
+    <string name="privacy_label"><u>سياسة الخصوصية</u></string>
+    <string name="terms_of_service"><u>شروط الخدمة.</u></string>
+    <string name="noti_msg_body">تم رفض إذن الإشعارات. يرجى السماح من الإعدادات</string>
+    <string name="internet_con_msg">الرجاء التحقق من اتصال الإنترنت الخاص بك والمحاولة مرة أخرى</string>
+    <string name="no_email_txt">لم يتم العثور على تطبيق لإرسال البريد الإلكتروني</string>
+    <string name="img_size_err">حجم الصورة المرفوعة أكبر من الحد المسموح به البالغ 1 ميجابايت. يرجى اختيار صورة أصغر والمحاولة مرة أخرى.</string>
+    <string name="manage_sub">إدارة الاشتراك</string>
+    <string name="profile_header">الملف الشخصي</string>
+    <string name="profile_body">قم بعمل كرتون لنفسك باستخدام مرشحات الملف الشخصي</string>
+    <string name="comic_header">كوميدي</string>
+    <string name="comic_body">قم بعمل كرتون لنفسك باستخدام مرشحات الكوميدي</string>
+    <string name="vintage_header">عتيق</string>
+    <string name="vintage_body">قم بعمل كرتون لنفسك باستخدام مرشحات العتيق</string>
+    <string name="skip_header">تخطي</string>
+    <string name="save_photo">حفظ الصورة</string>
+    <string name="choose_picture">اختيار الصورة</string>
+    <string name="saved_header">تم الحفظ</string>
+    <string name="saved_body">تم حفظ صورتك بنجاح</string>
+    <string name="comic_act_title">مرشحات كوميدي</string>
+    <string name="dreamy_act_title">مرشحات حالمة</string>
+    <string name="profile_act_title">مرشحات الملف الشخصي</string>
+    <string name="trending_act_title">مرشحات رائجة</string>
+    <string name="vintage_act_title">مرشحات عتيقة</string>
+    <string name="insta_msg">غير مثبت تطبيق Instagram على هذا الجهاز</string>
+    <string name="whatsapp_msg">غير مثبت تطبيق WhatsApp على هذا الجهاز</string>
+    <string name="facebook_msg">غير مثبت تطبيق Facebook على هذا الجهاز</string>
+    <string name="image_deleted_label">تم حذف الصورة</string>
+    <string name="image_deleted_msg">تم حذف الصورة بنجاح</string>
+    <string name="saved_label">تم الحفظ</string>
+    <string name="communicate_label">تواصل</string>
+    <string name="share_image_lbl">مشاركة الصورة</string>
+    <string name="share_whatsapp">هل ترغب في مشاركة هذه الصورة على WhatsApp؟</string>
+    <string name="share_facebook">هل ترغب في مشاركة هذه الصورة على Facebook؟</string>
+    <string name="share_instagram">هل ترغب في مشاركة هذه الصورة على Instagram؟</string>
+
+    <string name="image_size_msg">حجم الصورة كبير جدًا، يرجى المحاولة مرة أخرى بصورة أصغر</string>
+    <string name="privacy_body">يتمركز حالة رحلات المطار حول ضمان خصوصيتك. نحن لا نحتاج من العميل أن يقدم أي معلومات شخصية أو محدودة ولا نقوم بجمعها أثناء استخدام التطبيق. نحن ملتزمون بحماية خصوصيتك. مبدأنا الرئيسي في جمع البيانات هو جمع أقل قدر من البيانات المطلوبة لتشغيل خدمة تطبيق عالمية. نريد منك أن تفهم البيانات التي نقوم بجمعها، والتي لا نقوم بجمعها، وكيفية جمعها واستخدامها وتخزينها.</string>
+    <string name="privacy_body_new">اعتقادنا الأساسي فيما يتعلق بجمع البيانات هو جمع البيانات غير الضرورية فقط لتشغيل خدمة تطبيق عالمية على نطاق واسع. نريد منك أن تفهم البيانات التي نقوم بجمعها، والتي لا نقوم بجمعها، وكيفية جمعها واستخدامها وتخزينها. نحن لا نقوم بجمع سجلات نشاطك، بما في ذلك عدم تسجيل تاريخ التصفح أو وجهة حركة المرور أو طلبات DNS. كما أننا لا نقوم بتخزين سجلات الاتصال أبدًا، أي أننا لا نقوم بتسجيل عنوان IP الخاص بك أو عنوان IP النشط الخاص بك أو الطابع الزمني للاتصال أو مدة الجلسة. لقد عملنا على تصميم أنظمتنا لعدم احتواء بيانات حساسة عنك؛ ومع ذلك، عندما يتم مطالبتنا بذلك، لا يمكننا توفير معلومات ليس لدينا. يشرح هذا السياسة الخصوصية كيفية جمع موقع حالة رحلات المطار وشركاؤه ("حالة رحلات المطار"، "نحن"، أو "نحن") واستخدام ومشاركة المعلومات المتعلقة باستخدامك لخدماتنا وتطبيقاتنا (بشكل عام، "الخدمات"). هذه السياسة الخصوصية (سياسة الخصوصية) لا تنطبق على المعلومات التي قد تتعامل معها أثناء استخدام خدماتنا.</string>
+    <string name="not_rewarded">من فضلك شاهد الإعلان كاملاً لفتح هذا الفلتر</string>
+    <string name="no_free_trail">لا تجربة مجانية</string>
+    <string name="auto_renewal_cancel_anytime">إلغاء التجديد التلقائي في أي وقت</string>
+
+
+</resources>
